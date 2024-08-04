@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
 
 html {
@@ -14,38 +15,40 @@ html {
     width: 100vw;
     min-height: 100vh;
     background-color: #141414;
-    font-family: "Open Sans", sans-serif;
 }
 
-.logoSection {
+.logo-section {
     width: 95vw;
     margin: auto;
     height: 7rem;
     background-color: rgb(20, 20, 20);
+    /* background-color: red; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.logoSection a img {
+.logo-section a img {
     width: 10rem;
     height: 4rem;
     cursor: pointer;
 }
 
-.mainDiv {
+.main-div {
     width: 100vw;
     height: 80vh;
+    /* background-color: rosybrown; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
+    color: #fff;
 }
 
-.mainDiv h1 {
+.main-div h1 {
     font-size: 6.5rem;
     letter-spacing: 0.2rem;
+    font-size: 600;
 }
 
 .memberDiv {
@@ -61,12 +64,12 @@ html {
     min-height: 8.4rem;
     max-height: 20rem;
     width: 10vw;
-    min-width: 8.4rem;
+    min-width: 8.4px;
     max-width: 20rem;
     border-radius: 0.4rem;
     border: none;
     outline: none;
-    margin-top: 3rem;
+    margin-top: 4rem;
     margin-right: 3.5rem;
     position: relative;
     cursor: pointer;
@@ -75,15 +78,15 @@ html {
 }
 
 .memberDiv .btn:nth-child(1) {
-    background-image: url("./images/user1.png");
+    background-image: url("images/user1.png");
 }
 
 .memberDiv .btn:nth-child(2) {
-    background-image: url("./images/user2.png");
+    background-image: url("images/user2.png");
 }
 
 .memberDiv .btn:nth-child(3) {
-    background-image: url("./images/user3.png");
+    background-image: url("images/user3.png");
 }
 
 .memberDiv .btn:hover {
@@ -93,8 +96,9 @@ html {
 .memberDiv .btn span,
 .addIcon span {
     width: inherit;
+    /* background-color: red; */
     position: absolute;
-    bottom: -3rem;
+    bottom: -3.5rem;
     left: 0;
     text-transform: capitalize;
     color: rgb(153, 153, 153);
@@ -103,7 +107,7 @@ html {
 
 .fa-plus-circle {
     font-size: 7vw;
-    color: gray;
+    color: grey;
     opacity: 0.8;
 }
 
@@ -112,18 +116,18 @@ html {
 }
 
 .addIcon:hover {
-    background-color: white;
+    background-color: #fff;
 }
 
-.addIcon:hover>.fa-plus-circle {
+.addicon:hover>.fa-plus-circle {
     opacity: 1;
 }
 
 .manageProfile {
-    border: 1px solid gray;
-    color: gray;
+    border: 1px solid grey;
+    color: grey;
     text-transform: uppercase;
-    padding: 0.8rem 2.4rem;
+    padding: 0.8rem 2.6rem;
     letter-spacing: 0.5rem;
     font-size: 2.5rem;
     margin-top: 12rem;
@@ -132,6 +136,6 @@ html {
 }
 
 .manageProfile:hover {
-    border: 1px solid #ffff;
-    color: #ffff;
+    border: 1px solid #fff;
+    color: #fff;
 }

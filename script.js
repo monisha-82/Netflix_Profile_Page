@@ -1,4 +1,4 @@
-const users = ['Monisha', 'Tarango', 'Dhiraj'];
+const users = ['user1', 'user2', 'user3'];
 
 const memberDiv = document.querySelector('.memberDiv');
 const addIcon = document.querySelector('.addIcon');
@@ -13,7 +13,7 @@ const userIcons = () => {
 };
 
 addIcon.addEventListener('click', () => {
-    let userName = prompt('please enter your name');
+    let userName = prompt('Please enter your name: ');
 
     if (userName != null && !users.includes(userName)) {
         users.push(userName);
